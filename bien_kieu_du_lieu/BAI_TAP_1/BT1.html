@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Ngày sinh : <input id="date" type="number">
+        Tháng sinh : <input id="month" type="number">
+        Năm sinh : <input id="year" type="number"><br>    
+    </div>
+    <button type="button" onclick="xu_ly_hien_thi()">Kết Quả</button>
+    <div id="ket_qua"></div>
+    <script>
+        function xu_ly_hien_thi() {
+            let date = document.getElementById("date").value;
+            let month = document.getElementById ("month").value;
+            let year = document.getElementById ("year").value;
+            let KetQua = date + `-` + month + `-` + year;
+            document.getElementById("ket_qua").innerHTML = KetQua;
+        }        
+    </script>
+            
+        
+</body>
+</html>
