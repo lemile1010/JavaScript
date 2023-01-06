@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let chuoi_so = prompt ("Nhập chuỗi số :");
+        for (let index in chuoi_so) {
+            console.log(chuoi_so[index]);
+        }
+
+        let ket_qua = [];
+        for(let index = 0; index < chuoi_so.length; index++) {
+            ket_qua.push(chuoi_so[index]);
+            if (chuoi_so[index] % 2 == 0 && chuoi_so[index + 1] % 2 == 0) {
+                ket_qua.push("-");
+            }
+        }
+        console.log(`Kết quả: ` + ket_qua.join(""));
+        alert ("Chuỗi sau khi chèn là :" + ket_qua.join(""));
+    </script>
+</body>
+</html>
